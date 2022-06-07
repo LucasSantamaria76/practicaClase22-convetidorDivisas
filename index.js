@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 const convertirDivisa = async () => {
-  const url = `${host}/latest?amount=${valorEntrada.value}&from${tipoMonedaEntrada.value}&to=${tipoMonedaSalida.value}`;
+  const url = `${host}/latest?amount=${valorEntrada.value}&from=${tipoMonedaEntrada.value}&to=${tipoMonedaSalida.value}`;
   const respuesta = await fetch(url);
   const datos = await respuesta.json();
   return datos;
