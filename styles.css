@@ -12,12 +12,21 @@ body {
   line-height: 1.5;
   color: #333;
   background: #bababa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
   color: #616161;
   text-shadow: #e0e0e0 1px 1px 0;
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 select,
@@ -66,4 +75,32 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.contenedorHistorial {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.historial {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  height: 50vh;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 1.5rem;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
